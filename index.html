@@ -6,32 +6,38 @@
   <title>WrNacho | Juegos para descargar</title>
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #111827;
       color: #f9fafb;
     }
+
     header {
       background: #0f172a;
       padding: 28px 20px;
       text-align: center;
       border-bottom: 1px solid #1f2937;
     }
+
     header h1 {
       margin: 0;
       font-size: 2rem;
       color: #facc15;
     }
+
     header p {
       margin-top: 10px;
       color: #cbd5e1;
     }
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 24px;
     }
+
     .top-box {
       background: #1e293b;
       border: 1px solid #334155;
@@ -40,21 +46,33 @@
       margin-bottom: 24px;
       text-align: center;
     }
+
     .top-box a {
       display: inline-block;
       margin-top: 12px;
-      background: #facc15;
-      color: #111827;
       text-decoration: none;
       font-weight: bold;
       padding: 12px 18px;
       border-radius: 10px;
     }
+
+    .telegram-btn {
+      background: #facc15;
+      color: #111827;
+      margin-right: 8px;
+    }
+
+    .tiktok-btn {
+      background: #ff0050;
+      color: white;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
     }
+
     .card {
       background: #1e293b;
       border: 1px solid #334155;
@@ -62,15 +80,18 @@
       padding: 18px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     }
+
     .card h2 {
       font-size: 1.2rem;
       margin-top: 0;
       color: #facc15;
     }
+
     .card p {
       color: #cbd5e1;
       min-height: 72px;
     }
+
     .btn {
       display: inline-block;
       width: 100%;
@@ -83,6 +104,7 @@
       font-weight: bold;
       margin-top: 12px;
     }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -90,9 +112,23 @@
       border-top: 1px solid #1f2937;
       margin-top: 28px;
     }
+
     .small {
       font-size: 0.9rem;
       color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      .telegram-btn,
+      .tiktok-btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .tiktok-btn {
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
@@ -104,9 +140,11 @@
 
   <div class="container">
     <div class="top-box">
-      <h2>Canal de Telegram</h2>
-      <p>Ahí voy subiendo más juegos, links y novedades.</p>
-      <a href="https://t.me/TU_CANAL" target="_blank">Unirme al canal</a>
+      <h2>Mis redes</h2>
+      <p>Seguime en TikTok y unite al canal para más juegos, links y novedades.</p>
+
+      <a class="telegram-btn" href="https://t.me/TU_CANAL" target="_blank">Unirme al canal</a>
+      <a class="tiktok-btn" href="https://www.tiktok.com/@wrnachooo?is_from_webapp=1&sender_device=pc" target="_blank">Ir a mi TikTok @wrnachooo</a>
     </div>
 
     <div class="grid">
